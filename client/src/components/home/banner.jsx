@@ -3,7 +3,7 @@ import React from 'react'
 const Banner = () => {
   return (
     /* Changed justify-between to justify-center, and added gap-2 */
-    <div className="flex flex-wrap items-center justify-center gap-2 w-full px-4 md:px-14 py-3font-medium text-sm text-black text-center bg-gradient-to-r from-violet-500 to-purple-100">
+    <div className="flex flex-wrap items-center justify-center gap-2 w-full px-4 md:px-14 py-4 font-medium text-sm text-black text-center bg-gradient-to-r from-violet-500 to-purple-100">
         <p>New AI Feature Added</p>
         
         <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom' // Ensure Link is imported if using react-router
 
 const Hero = () => {
     const [mobileOpen, setMobileOpen] = React.useState(false)
@@ -24,14 +25,14 @@ const Hero = () => {
                     </a>
                     <div className='w-0.5 h-8 bg-gray-50 hidden md:flex'></div>
                     <div id="menu" className={`max-md:absolute max-md:bg-white/70 max-md:h-[785px] max-md:overflow-hidden max-md:transition-[width] max-md:duration-300 max-md:top-0 max-md:left-0 max-md:flex-col max-md:justify-center max-md:backdrop-blur flex items-center gap-8 z-50 md:gap-10 flex-1 ${mobileOpen ? 'max-md:w-full' : 'max-md:w-0'}`}>
-                        <a href="#" onClick={() => setMobileOpen(false)} className="text-gray-600 hover:text-gray-700 text-sm">Services</a>
-                        <a href="#" onClick={() => setMobileOpen(false)} className="text-gray-600 hover:text-gray-700 text-sm">Reviews</a>
-                        <a href="#" onClick={() => setMobileOpen(false)} className="text-gray-600 hover:text-gray-700 text-sm">Pricing</a>
-                        <a href="#" onClick={() => setMobileOpen(false)} className="text-gray-600 hover:text-gray-700 text-sm">Projects</a>
-                        <a href="#" onClick={() => setMobileOpen(false)} className="text-gray-600 hover:text-gray-700 text-sm">Contact Us</a>
+                        <a href="#" onClick={() => setMobileOpen(false)} className="text-black-900 hover:text-shadow-black-700 text-sm">Services</a>
+                        <a href="#" onClick={() => setMobileOpen(false)} className="text-black-900 hover:text-shadow-black-700 text-sm">Reviews</a>
+                        <a href="#" onClick={() => setMobileOpen(false)} className="text-black-900 hover:text-shadow-black-700 text-sm">Pricing</a>
+                        <a href="#" onClick={() => setMobileOpen(false)} className="text-black-900 hover:text-shadow-black-700 text-sm">Projects</a>
+                        <a href="#" onClick={() => setMobileOpen(false)} className="text-black-900 hover:text-shadow-black-700 text-sm">Contact Us</a>
 
                         <button id="close-menu" onClick={() => setMobileOpen(false)} className="md:hidden bg-violet-500 active:bg-violet-600 text-white p-2 rounded-md aspect-square font-medium transition">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                                 <path d="M18 6 6 18" />
                                 <path d="m6 6 12 12" />
                             </svg>
@@ -40,23 +41,28 @@ const Hero = () => {
 
                     {/* Right side buttons container */}
                     <div className="flex items-center gap-3 md:pr-1">
-                        <button className="hidden md:inline-block bg-violet-600 hover:bg-violet-700 text-white px-4 md:px-6 py-2 md:py-3 rounded-full text-xs md:text-sm transition cursor-pointer">
-                            Get Template
-                        </button>
-
-                        {/* Moved Glowing White Login Button to the right side */}
-                        <button className="hidden md:inline-block bg-white text-violet-600 border border-white/40 px-5 py-2 md:py-3 rounded-full text-xs md:text-sm font-medium shadow-[0_0_15px_rgba(255,255,255,0.7)] hover:shadow-[0_0_22px_rgba(255,255,255,0.9)] transition duration-300 cursor-pointer active:scale-95">
+                        <Link 
+                            to="/app?state=register" 
+                            className="hidden md:inline-block bg-violet-600 hover:bg-violet-700 text-white px-4 md:px-6 py-2 md:py-3 rounded-full text-xs md:text-sm transition cursor-pointer text-center"
+                        >
+                            Get Started
+                        </Link>
+                       
+                        {/* Glowing White Login Button */}
+                        <Link 
+                            to='/app?state=login'
+                            className="hidden md:inline-block bg-white text-violet-600 border border-white/40 px-5 py-2 md:py-3 rounded-full text-xs md:text-sm font-medium shadow-[0_0_15px_rgba(255,255,255,0.7)] hover:shadow-[0_0_22px_rgba(255,255,255,0.9)] transition duration-300 cursor-pointer active:scale-95">
                             Login
-                        </button>
+                        </Link>
 
                         <button id="open-menu" onClick={() => setMobileOpen(true)} className="md:hidden text-gray-700 p-2 rounded-md aspect-square font-medium transition">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                                 <path d="M4 12h16" />
                                 <path d="M4 18h16" />
                                 <path d="M4 6h16" />
                             </svg>
                         </button>
-                    </div>
+                    </div> {/* <--- This properly shuts the Right-side Container wrapper now */}
                 </nav>
 
                 <div className="flex flex-wrap items-center justify-center gap-2 pl-2 pr-4 py-1.5 mt-30 rounded-full bg-white/50 border border-white">
