@@ -31,7 +31,7 @@ const Hero = () => {
                         <a href="#Projects" onClick={() => setMobileOpen(false)} className="text-black-900 hover:text-shadow-black-700 text-sm">Projects</a>
                         <a href="#Contact" onClick={() => setMobileOpen(false)} className="text-black-900 hover:text-shadow-black-700 text-sm">Contact Us</a>
 
-                        <button id="close-menu" onClick={() => setMobileOpen(false)} className="md:hidden bg-violet-500 active:bg-violet-600 text-white p-2 rounded-md aspect-square font-medium transition">
+                        <button id="close-menu" onClick={() => setMobileOpen(false)} className="md:hidden bg-green-500 active:bg-green-600 text-white p-2 rounded-md aspect-square font-medium transition">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                                 <path d="M18 6 6 18" />
                                 <path d="m6 6 12 12" />
@@ -43,7 +43,7 @@ const Hero = () => {
                     <div className="flex items-center gap-3 md:pr-1">
                         <Link 
                             to="/app?state=register" 
-                            className="hidden md:inline-block bg-violet-600 hover:bg-violet-700 text-white px-4 md:px-6 py-2 md:py-3 rounded-full text-xs md:text-sm transition cursor-pointer text-center"
+                            className="hidden md:inline-block bg-green-600 hover:bg-green-700 text-white px-4 md:px-6 py-2 md:py-3 rounded-full text-xs md:text-sm transition cursor-pointer text-center"
                         >
                             Get Started
                         </Link>
@@ -51,7 +51,7 @@ const Hero = () => {
                         {/* Glowing White Login Button */}
                         <Link 
                             to='/app?state=login'
-                            className="hidden md:inline-block bg-white text-violet-600 border border-white/40 px-5 py-2 md:py-3 rounded-full text-xs md:text-sm font-medium shadow-[0_0_15px_rgba(255,255,255,0.7)] hover:shadow-[0_0_22px_rgba(255,255,255,0.9)] transition duration-300 cursor-pointer active:scale-95">
+                            className="hidden md:inline-block bg-white text-green-600 border border-white/40 px-5 py-2 md:py-3 rounded-full text-xs md:text-sm font-medium shadow-[0_0_15px_rgba(255,255,255,0.7)] hover:shadow-[0_0_22px_rgba(255,255,255,0.9)] transition duration-300 cursor-pointer active:scale-95">
                             Login
                         </Link>
 
@@ -62,7 +62,7 @@ const Hero = () => {
                                 <path d="M4 6h16" />
                             </svg>
                         </button>
-                    </div> {/* <--- This properly shuts the Right-side Container wrapper now */}
+                    </div>
                 </nav>
 
                 <div className="flex flex-wrap items-center justify-center gap-2 pl-2 pr-4 py-1.5 mt-30 rounded-full bg-white/50 border border-white">
@@ -70,24 +70,25 @@ const Hero = () => {
                         <span className="absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75 animate-ping duration-300"></span>
                         <span className="relative inline-flex size-2 rounded-full bg-green-600"></span>
                     </div>
-                    <p className="text-sm text-black/60">Join 12,450+ brands growing with us</p>
+                    <p className="text-sm text-black/60">Join 12,450+ Users</p>
                 </div>
 
-                <h1 className='text-4xl md:text-[66px]/19 text-center max-w-2xl mt-8 text-gray-800 bg-clip-text leading-tight font-medium'>Websites built to perform beautifully.</h1>
+                <h1 className='text-4xl md:text-[66px]/19 text-center max-w-2xl mt-8 text-gray-800 bg-clip-text leading-tight font-medium'>Land Your Dream Job</h1>
                 <p className="text-sm text-gray-600 text-center max-w-[630px] mt-4">
-                    We design high-impact websites that convert and scale. From sleek interfaces to full stack experiences, we bring your brand to life online.
+                    Create a standout resume in minutes with our AI-powered buider. Tailor your resume to perfection and get noticed by top employers
                 </p>
 
+                {/* Updated Hero Buttons to be rounded rectangles */}
                 <div className='flex gap-3 mt-10'>
-                    <button className="bg-violet-600 hover:bg-violet-700 text-white text-xs md:text-sm px-6 py-3 rounded-lg transition cursor-pointer">
+                    <Link to="/app" className="bg-green-600 hover:bg-green-700 text-white text-xs md:text-sm px-6 py-3 rounded-full transition cursor-pointer text-center flex items-center justify-center">
                         Get Started Now
-                    </button>
-                    <button className="bg-white hover:bg-white/5 border border-violet-400 text-gray-600 text-xs md:text-sm px-5 py-3 rounded-lg transition cursor-pointer">
-                        Book a demo
-                    </button>
+                    </Link>
+                    <Link to="/app" className="bg-white hover:bg-white/5 border border-green-400 text-gray-600 text-xs md:text-sm px-6 py-3 rounded-full transition cursor-pointer text-center flex items-center justify-center">
+                        Learn More
+                    </Link>
                 </div>
 
-                <div className='w-full max-w-[800px] h-[3px] mt-10 bg-linear-to-r from-white/10 via-violet-600 to-white/10'></div>
+                <div className='w-full max-w-[800px] h-[3px] mt-10 bg-linear-to-r from-white/10 via-green-600 to-white/10'></div>
 
                 <div className='grid grid-cols-2 md:grid-cols-4 gap-8 py-18 max-w-[930px] w-full'>
                     <div className='text-center'>
