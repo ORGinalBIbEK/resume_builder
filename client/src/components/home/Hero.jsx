@@ -25,11 +25,11 @@ const Hero = () => {
                     </a>
                     <div className='w-0.5 h-8 bg-gray-50 hidden md:flex'></div>
                     <div id="menu" className={`max-md:absolute max-md:bg-white/70 max-md:h-[785px] max-md:overflow-hidden max-md:transition-[width] max-md:duration-300 max-md:top-0 max-md:left-0 max-md:flex-col max-md:justify-center max-md:backdrop-blur flex items-center gap-8 z-50 md:gap-10 flex-1 ${mobileOpen ? 'max-md:w-full' : 'max-md:w-0'}`}>
-                        <a href="#" onClick={() => setMobileOpen(false)} className="text-black-900 hover:text-shadow-black-700 text-sm">Services</a>
-                        <a href="#" onClick={() => setMobileOpen(false)} className="text-black-900 hover:text-shadow-black-700 text-sm">Reviews</a>
-                        <a href="#" onClick={() => setMobileOpen(false)} className="text-black-900 hover:text-shadow-black-700 text-sm">Pricing</a>
-                        <a href="#" onClick={() => setMobileOpen(false)} className="text-black-900 hover:text-shadow-black-700 text-sm">Projects</a>
-                        <a href="#" onClick={() => setMobileOpen(false)} className="text-black-900 hover:text-shadow-black-700 text-sm">Contact Us</a>
+                        <a href="#" onClick={() => setMobileOpen(false)} className="text-black-900 hover:text-shadow-black-700 text-sm">Home</a>
+                        <a href="#Features" onClick={() => setMobileOpen(false)} className="text-black-900 hover:text-shadow-black-700 text-sm">Features</a>
+                        <a href="#Testimonials" onClick={() => setMobileOpen(false)} className="text-black-900 hover:text-shadow-black-700 text-sm">Testimonials</a>
+                        <a href="#Projects" onClick={() => setMobileOpen(false)} className="text-black-900 hover:text-shadow-black-700 text-sm">Projects</a>
+                        <a href="#Contact" onClick={() => setMobileOpen(false)} className="text-black-900 hover:text-shadow-black-700 text-sm">Contact Us</a>
 
                         <button id="close-menu" onClick={() => setMobileOpen(false)} className="md:hidden bg-violet-500 active:bg-violet-600 text-white p-2 rounded-md aspect-square font-medium transition">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
