@@ -24,12 +24,14 @@ const Hero = () => {
                         />
                     </a>
                     <div className='w-0.5 h-8 bg-gray-50 hidden md:flex'></div>
+                    
+                    {/* Added hover transition, green text change, and green drop-shadow glow to the menu links below */}
                     <div id="menu" className={`max-md:absolute max-md:bg-white/70 max-md:h-[785px] max-md:overflow-hidden max-md:transition-[width] max-md:duration-300 max-md:top-0 max-md:left-0 max-md:flex-col max-md:justify-center max-md:backdrop-blur flex items-center gap-8 z-50 md:gap-10 flex-1 ${mobileOpen ? 'max-md:w-full' : 'max-md:w-0'}`}>
-                        <a href="#" onClick={() => setMobileOpen(false)} className="text-black-900 hover:text-shadow-black-700 text-sm">Home</a>
-                        <a href="#Features" onClick={() => setMobileOpen(false)} className="text-black-900 hover:text-shadow-black-700 text-sm">Features</a>
-                        <a href="#Testimonials" onClick={() => setMobileOpen(false)} className="text-black-900 hover:text-shadow-black-700 text-sm">Testimonials</a>
-                        <a href="#Projects" onClick={() => setMobileOpen(false)} className="text-black-900 hover:text-shadow-black-700 text-sm">Projects</a>
-                        <a href="#Contact" onClick={() => setMobileOpen(false)} className="text-black-900 hover:text-shadow-black-700 text-sm">Contact Us</a>
+                        <a href="#" onClick={() => setMobileOpen(false)} className="text-gray-800 hover:text-green-600 hover:drop-shadow-[0_0_8px_rgba(34,197,94,0.6)] font-medium text-sm transition duration-200">Home</a>
+                        <a href="#Features" onClick={() => setMobileOpen(false)} className="text-gray-800 hover:text-green-600 hover:drop-shadow-[0_0_8px_rgba(34,197,94,0.6)] font-medium text-sm transition duration-200">Features</a>
+                        <a href="#Testimonials" onClick={() => setMobileOpen(false)} className="text-gray-800 hover:text-green-600 hover:drop-shadow-[0_0_8px_rgba(34,197,94,0.6)] font-medium text-sm transition duration-200">Testimonials</a>
+                        <a href="#Projects" onClick={() => setMobileOpen(false)} className="text-gray-800 hover:text-green-600 hover:drop-shadow-[0_0_8px_rgba(34,197,94,0.6)] font-medium text-sm transition duration-200">Projects</a>
+                        <a href="#Contact" onClick={() => setMobileOpen(false)} className="text-gray-800 hover:text-green-600 hover:drop-shadow-[0_0_8px_rgba(34,197,94,0.6)] font-medium text-sm transition duration-200">Contact Us</a>
 
                         <button id="close-menu" onClick={() => setMobileOpen(false)} className="md:hidden bg-green-500 active:bg-green-600 text-white p-2 rounded-md aspect-square font-medium transition">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -78,7 +80,6 @@ const Hero = () => {
                     Create a standout resume in minutes with our AI-powered buider. Tailor your resume to perfection and get noticed by top employers
                 </p>
 
-                {/* Updated Hero Buttons to be rounded rectangles */}
                 <div className='flex gap-3 mt-10'>
                     <Link to="/app" className="bg-green-600 hover:bg-green-700 text-white text-xs md:text-sm px-6 py-3 rounded-full transition cursor-pointer text-center flex items-center justify-center">
                         Get Started Now
