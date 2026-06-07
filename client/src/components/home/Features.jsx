@@ -1,5 +1,6 @@
 import React from "react";
 import { Lightning } from "@phosphor-icons/react";
+import Title from "./Title";
 
 const Features = () => {
   return (
@@ -12,7 +13,7 @@ const Features = () => {
           <span>Simple Process</span>
         </div>
       </div>
-
+<Title title='Build your resume' description='Create a professional resume in minutes with our easy-to-use builder.'/>
       {/* MAIN CONTENT */}
       <div className="flex flex-col md:flex-row items-center justify-center gap-8 min-h-[500px]">
 
