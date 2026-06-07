@@ -1,9 +1,10 @@
 import React from 'react'
 
-const Title = () => {
+const Title = ({title,description}) => {
   return (
-    <div>
-      
+    <div className='text-center mt-6 text-slate-700'>
+        <h2>{title}</h2>
+        <p>{description}</p>
     </div>
   )
 }
