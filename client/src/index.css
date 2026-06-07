@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
 @import "tailwindcss";
-//"*"this applies to all of the file
-*{
-      font-family: "Outfit", sans-serif;
+
+/* "*" applies to all elements */
+* {
+  font-family: "Outfit", sans-serif;
 }
-@layer base{
-      button{
-            @apply cursor-pointer;
-      }
+
+@layer base {
+  button {
+    @apply cursor-pointer;
+  }
 }
