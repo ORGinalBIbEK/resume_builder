@@ -3,17 +3,9 @@ import { Lightning } from "@phosphor-icons/react";
 
 const Features = () => {
   return (
-    <section id="features" className="py-16 px-4 md:px-8 lg:px-16">
-      {/* Items-center handles the vertical centering between the image and the content block */}
+    <section className="py-16 px-4 md:px-8 lg:px-16">
       <div className="flex flex-col md:flex-row items-center justify-center gap-8 min-h-[500px]">
-                <div className="space-y-4 flex flex-col justify-center h-full">
-          
-          {/* Badge */}
-  <div className="flex items-center gap-2 text-sm text-green-800 bg-green-400/10 border border-green-200 rounded-full px-6 py-1.5">
-    <Lightning size={16} weight="fill" className="text-green-700" />
-    <span>Simple Process</span>
-  </div>
-</div>
+
         {/* Image */}
         <div className="w-full max-w-2xl xl:-ml-32 flex justify-center">
           <img
@@ -23,7 +15,16 @@ const Features = () => {
           />
         </div>
 
-        {/* Content - flex-col and justify-center keeps everything vertically packed and centered */}
+        {/* Content */}
+        <div className="space-y-4 flex flex-col justify-center h-full">
+
+          {/* Badge */}
+          <div className="flex justify-center">
+            <div className="flex items-center gap-2 text-sm text-green-800 bg-green-400/10 border border-green-200 rounded-full px-6 py-1.5">
+              <Lightning size={16} weight="fill" className="text-green-700" />
+              <span>Simple Process</span>
+            </div>
+          </div>
 
           {/* Card 1 */}
           <div className="group cursor-pointer max-w-md w-full">
@@ -104,15 +105,14 @@ const Features = () => {
                   Customizable Reports
                 </h3>
                 <p className="text-sm text-slate-600">
-                  Export professional, audit-ready financial reports for tax
-                  filing or internal review.
+                  Export professional, audit-ready financial reports for tax filing or internal review.
                 </p>
               </div>
             </div>
           </div>
 
         </div>
-      
+      </div>
     </section>
   );
 };
