@@ -7,7 +7,7 @@ const Features = () => {
     <section className="py-16 px-4 md:px-8 lg:px-16">
 
       {/* TOP BADGE */}
-      <div className="flex justify-center mb-10">
+      <div id ='features'className="flex justify-center mb-10">
         <div className="flex items-center gap-2 text-sm text-green-800 bg-green-400/10 border border-green-200 rounded-full px-6 py-1.5">
           <Lightning size={16} weight="fill" className="text-green-700" />
           <span>Simple Process</span>
