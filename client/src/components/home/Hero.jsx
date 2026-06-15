@@ -16,7 +16,7 @@ const Hero = () => {
             </style>
             <section className='flex flex-col items-center bg-linear-to-b from-[#D9D9FF] to-[#F8F3F9] px-4 py-4' >
                 <nav className="flex items-center justify-between gap-8 bg-white/60 border border-white rounded-full px-4 md:px-2 py-2.5 w-full max-w-4xl" >
-                    <a href="https://prebuiltui.com" className='flex items-center md:pl-3'>
+                    <a href="#" className='flex items-center md:pl-3'>
                        <img 
                             src="/logoo.png" 
                             alt="logo" 

@@ -1,13 +1,12 @@
 import React from 'react'
-
+import logo from "../../assets/logo.svg";
 const Footer = () => {
   return (
     <>
-     <footer className="flex flex-wrap justify-center  lg:justify-between overflow-hidden gap-10 md:gap-20 py-16 px-6 md:px-16 lg:px-24 xl:px-32 text-[13px] text-gray-500 bg-gradient-to-r from-white via-green-300/60 to white mt-40" >
+     <footer className="flex flex-wrap justify-center  lg:justify-between overflow-hidden gap-10 md:gap-20 py-16 px-6 md:px-16 lg:px-24 xl:px-32 text-[13px] text-gray-500 bg-gradient-to-r from-white via-green-300/60 to-white mt-40" >
                 <div className="flex flex-wrap items-start gap-10  md:gap-[60px] xl:gap-[140px]">
-                    <a href="https://prebuiltui.com">
-                        <img src="/logoo.png" alt="logo" className="h-11 w-auto"/>
-                    </a> 
+                    <a href="#">
+                        <img src={logo} alt="logo" className="h-11 w-auto" />                    </a> 
                     <div>
                         <p className="text-slate-100 font-semibold">Product</p>
                         <ul className="mt-2 space-y-2">
