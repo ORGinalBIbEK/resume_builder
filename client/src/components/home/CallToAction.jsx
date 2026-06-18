@@ -11,7 +11,7 @@ const CallToAction = () => {
                 }
             `}</style>
             <div id = 'cta'
-                className="max-w-5xl py-16 md:pl-24 md:w-full mx-2 md:mx-auto flex flex-col items-start justify-center text-left bg-gradient-to-b from-[#16b710] to-[#20035a] rounded-2xl p-10 text-white">
+                className="max-w-5xl py-16 md:pl-24 md:w-full mx-2 md:mx-auto flex flex-col items-start justify-center text-left bg-gradient-to-b from-[#289f24] to-[#4a2f80] rounded-2xl p-10 text-white">
                 <div className="flex items-center" mt-28>
                     <div className="flex -space-x-3 pr-3">
                         <img src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=200" alt="image"
