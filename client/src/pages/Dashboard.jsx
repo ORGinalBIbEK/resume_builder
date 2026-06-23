@@ -40,8 +40,11 @@ const Dashboard = () => {
         </div>
         <hr className='border-slate-300 my-6 sm:w-[305px] '/>
         <div className='grid grid-cols-2 sm:flex flex-wrap gap-4'>
-          {allResumes.map(()=>{
-
+          {allResumes.map((resume,index)=>{
+            const baseColor=color[index% VideoColorSpace.length];
+            return (
+              <button key={index} className=''></button>
+            )
           })}
 
         </div>
