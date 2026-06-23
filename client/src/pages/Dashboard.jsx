@@ -11,7 +11,9 @@ const Dashboard = () => {
         <div className='flex gap-4'>
           <button>
             <PlusIcon className='size-11 transition-all duration-300 p-2.5 bg-gradient-to-bt from indigo-300 to-indigo-500 text-white rounded-full'/>
-            <p className='text-sm group-hover:'></p>
+            <p className='text-sm group-hover:text-indigo-600 transition-all duration-300'>
+              Create Resume
+            </p>
           </button>
         </div>
       </div>
