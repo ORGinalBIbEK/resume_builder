@@ -1,8 +1,16 @@
 import { CloudArrowUp, Plus } from '@phosphor-icons/react'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import { dummyResumeData } from '../assets/assets'
 
 const Dashboard = () => {
-  return (
+  const [allResumes,setAllResumes]=useStateate([])
+  const loadAllResumes=async()=>{
+    setAllResumes(dummyResumeData)
+  }
+  useEffect(()=>{
+    loadAllResumes
+  })
+    return (
     <div>
       <div className='max-w-7xl mx-auto px-4 py-8'>
         <p className='text-2xl font-medium mb-6 bg-gradient-to-r from-slate-500 to-slate-700 bg-clip-text text-transparent sm:hidden'>
