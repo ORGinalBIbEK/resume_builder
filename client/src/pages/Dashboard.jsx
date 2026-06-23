@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react'
 import { dummyResumeData } from '../assets/assets'
 
 const Dashboard = () => {
+  const color
   const [allResumes,setAllResumes]=useStateate([])
   const loadAllResumes=async()=>{
     setAllResumes(dummyResumeData)
@@ -38,8 +39,11 @@ const Dashboard = () => {
 
         </div>
         <hr className='border-slate-300 my-6 sm:w-[305px] '/>
-        <div>
-          
+        <div className='grid grid-cols-2 sm:flex flex-wrap gap-4'>
+          {allResumes.map(()=>{
+
+          })}
+
         </div>
       </div>
     </div>
