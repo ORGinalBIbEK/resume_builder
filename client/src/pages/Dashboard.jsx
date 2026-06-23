@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react'
 import { dummyResumeData } from '../assets/assets'
 
 const Dashboard = () => {
-  const color
+  const color=["#933ea","#d97706","#dc2626","#0284c7","#16a34a"]
   const [allResumes,setAllResumes]=useStateate([])
   const loadAllResumes=async()=>{
     setAllResumes(dummyResumeData)
