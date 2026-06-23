@@ -8,8 +8,8 @@ const Dashboard = () => {
     setAllResumes(dummyResumeData)
   }
   useEffect(()=>{
-    loadAllResumes
-  })
+    loadAllResumes()
+  },[])
     return (
     <div>
       <div className='max-w-7xl mx-auto px-4 py-8'>
@@ -38,6 +38,9 @@ const Dashboard = () => {
 
         </div>
         <hr className='border-slate-300 my-6 sm:w-[305px] '/>
+        <div>
+          
+        </div>
       </div>
     </div>
   )
