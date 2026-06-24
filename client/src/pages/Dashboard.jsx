@@ -54,7 +54,7 @@ const Dashboard = () => {
                 <FileText className="size-7 group-hover:scale-105 transition-all"
                   style={{ color: baseColor }} />
                 <p className='text-sm group-hover:scale-105 transition-all px-2 text-center style={{color:baseColor}}'>{resume.title}</p>
-                <p>
+                <p className='absoulte bottom-1 text-[11px] text-slate-400 group-hover:text-slate-500 transition-all duration-300 px-2 text-center' style={{color:baseColor+'90'}}>
                   Update on {new Date(resume.updatedAt).toLocaleDateString}
                 </p>
               </button>
