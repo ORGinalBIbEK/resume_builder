@@ -58,7 +58,7 @@ const Dashboard = () => {
                   Update on {new Date(resume.updatedAt).toLocaleDateString}
                 </p>
                 <div className='absoulte top-1 right-1 group-hover:flex items-center hidden'>
-                  <TrashIcon className='size'
+                  <TrashIcon className='size-7 p-1.5 hover:bg-white/50 rounded text-slate-700 transition-colors'/>
                 </div>
               </button>
             )
