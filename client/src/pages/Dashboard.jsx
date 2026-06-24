@@ -1,4 +1,4 @@
-import { CloudArrowUp, Plus, FileText } from '@phosphor-icons/react'
+import { CloudArrowUp, Plus, FileText, TrashIcon } from '@phosphor-icons/react'
 import React, { useEffect, useState } from 'react'
 import { dummyResumeData } from '../assets/assets'
 
@@ -57,6 +57,9 @@ const Dashboard = () => {
                 <p className='absoulte bottom-1 text-[11px] text-slate-400 group-hover:text-slate-500 transition-all duration-300 px-2 text-center' style={{color:baseColor+'90'}}>
                   Update on {new Date(resume.updatedAt).toLocaleDateString}
                 </p>
+                <div className='absoulte top-1 right-1 group-hover:flex items-center hidden'>
+                  <TrashIcon className='size'
+                </div>
               </button>
             )
           })}
