@@ -1,4 +1,4 @@
-import { CloudArrowUp, Plus, FileText, TrashIcon } from '@phosphor-icons/react'
+import { CloudArrowUp, Plus, FileText, TrashIcon, PencilIcon } from '@phosphor-icons/react'
 import React, { useEffect, useState } from 'react'
 import { dummyResumeData } from '../assets/assets'
 
@@ -59,6 +59,7 @@ const Dashboard = () => {
                 </p>
                 <div className='absoulte top-1 right-1 group-hover:flex items-center hidden'>
                   <TrashIcon className='size-7 p-1.5 hover:bg-white/50 rounded text-slate-700 transition-colors'/>
+                  <PencilIcon className='size-7 p-1.5 hover:bg-white/50 rounded text-slate-700 transition-colors'/>
                 </div>
               </button>
             )
