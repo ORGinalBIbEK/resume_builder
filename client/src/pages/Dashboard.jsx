@@ -1,10 +1,10 @@
-import { CloudArrowUp, Plus, FileText, TrashIcon, PencilIcon } from '@phosphor-icons/react'
+import { CloudArrowUp, Plus, FileText, Trash, Pencil } from '@phosphor-icons/react'
 import React, { useEffect, useState } from 'react'
 import { dummyResumeData } from '../assets/assets'
 
 const Dashboard = () => {
   const color = ["#9333ea", "#d97706", "#dc2626", "#0284c7", "#16a34a"]
-    const [allResumes, setAllResumes] = useState([])
+  const [allResumes, setAllResumes] = useState([])
 
   const loadAllResumes = async () => {
     setAllResumes(dummyResumeData)
@@ -51,15 +51,23 @@ const Dashboard = () => {
                 background: `linear-gradient(135deg, ${baseColor}10, ${baseColor}40)`,
                 borderColor: baseColor + '40'
               }}>
-                <FileText className="size-7 group-hover:scale-105 transition-all"
+                <FileText className="size-7 group-hover:scale-105 transition-all mb-1"
                   style={{ color: baseColor }} />
-                <p className='text-sm group-hover:scale-105 transition-all px-2 text-center style={{color:baseColor}}'>{resume.title}</p>
-                <p className='absoulte bottom-1 text-[11px] text-slate-400 group-hover:text-slate-500 transition-all duration-300 px-2 text-center' style={{color:baseColor+'90'}}>
-                  Update on {new Date(resume.updatedAt).toLocaleDateString}
+                
+                {/* Fixed class string syntax & separated style tag */}
+                <p className='text-sm font-medium group-hover:scale-105 transition-all px-2 text-center' style={{ color: baseColor }}>
+                  {resume.title}
                 </p>
-                <div className='absoulte top-1 right-1 group-hover:flex items-center hidden'>
-                  <TrashIcon className='size-7 p-1.5 hover:bg-white/50 rounded text-slate-700 transition-colors'/>
-                  <PencilIcon className='size-7 p-1.5 hover:bg-white/50 rounded text-slate-700 transition-colors'/>
+                
+                {/* Fixed "absolute" typo & added execution parentheses () to method */}
+                <p className='absolute bottom-2 text-[10px] text-slate-400 group-hover:text-slate-600 transition-all duration-300 px-2 text-center'>
+                  Updated on {new Date(resume.updatedAt).toLocaleDateString()}
+                </p>
+                
+                {/* Fixed "absolute" typo & Icon names */}
+                <div className='absolute top-2 right-2 group-hover:flex items-center gap-0.5 hidden bg-white/80 backdrop-blur-sm rounded shadow-sm p-0.5'>
+                  <Pencil className='size-6 p-1 hover:bg-slate-100 rounded text-slate-700 transition-colors'/>
+                  <Trash className='size-6 p-1 hover:bg-red-50 hover:text-red-600 rounded text-slate-700 transition-colors'/>
                 </div>
               </button>
             )
