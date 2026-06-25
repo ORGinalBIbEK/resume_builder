@@ -6,6 +6,7 @@ const Dashboard = () => {
   const color = ["#9333ea", "#d97706", "#dc2626", "#0284c7", "#16a34a"]
   const [allResumes, setAllResumes] = useState([])
   const [showCreateResume, setShowCreateResume] = useState([false])
+  const [showUploadResume, setShowUploadResume] = useState([false])
 
   const loadAllResumes = async () => {
     setAllResumes(dummyResumeData)
@@ -75,6 +76,11 @@ const Dashboard = () => {
           })}
 
         </div>
+        {showCreateResume && (
+          <form action>
+
+          </form>
+        )}
       </div>
     </div>
   )
