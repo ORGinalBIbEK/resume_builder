@@ -81,7 +81,9 @@ const Dashboard = () => {
           z-10 flex items-center justify-center'>
             <div>
               <h2>Create a Resume</h2>
-              <input type='text' placeholder='Enter resume title'/>
+              <input type='text' placeholder='Enter resume title' className='w-full px-4 py-2 mb-4 focus:border-green-600'required/>
+              <button>
+                </button>            
             </div>
 
           </form>
