@@ -77,7 +77,8 @@ const Dashboard = () => {
 
         </div>
         {showCreateResume && (
-          <form action>
+          <form className='fixed inset-0 bg-black/70 backdrop-blur bg-opacity-50 
+          z-10 flex items-center justify-center'>
 
           </form>
         )}
