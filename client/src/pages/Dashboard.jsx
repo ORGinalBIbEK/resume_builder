@@ -79,6 +79,10 @@ const Dashboard = () => {
         {showCreateResume && (
           <form className='fixed inset-0 bg-black/70 backdrop-blur bg-opacity-50 
           z-10 flex items-center justify-center'>
+            <div>
+              <h2>Create a Resume</h2>
+              <input type='text' placeholder='Enter resume title'/>
+            </div>
 
           </form>
         )}
