@@ -43,7 +43,7 @@ const Dashboard = () => {
           </button>
 
         </div>
-        <hr className='border-slate-300 my-6 sm:w-[310px] '/>
+        <hr className='border-slate-300 my-6 sm:w-[305px] '/>
         <div className='grid grid-cols-2 sm:flex flex-wrap gap-4'>
           {allResumes.map((resume, index) => {
             const baseColor = color[index % color.length];
